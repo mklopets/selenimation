@@ -15,12 +15,7 @@ To get started with Selenimation, just include the files provided in the `/selen
 ````
 
 ### Syntax
-Selenimation takes the list of words to loop through from the `li` elements inside an unordered list element with the `selenimation` class:
-````html
-<u class="selenimation">
-````
-
-The strings to be looped through should be put in the unordered list like this:
+The strings to be looped through should be put in `li` elements inside an unordered list with the `selenimation` class:
 ````html
 <u class="selenimation">
 	<li>First string</li>
