@@ -5,7 +5,7 @@ Selenimation is a lightweight JavaScript and CSS library for an input box style 
 
 ## Usage
 ---
-To get started with Selenimation, just include the files provided in the `/selenium` folder in your HTML.
+To get started with Selenimation, you only need to include the files provided in the `/selenium` folder and a recent version of jQuery in your HTML.
 
 *jQuery* is a requirement for Selenimation to work. These are the lines of code required in the `head`tag of your HTML for Selenimation to work:
 ````html
@@ -30,11 +30,11 @@ Settings can be specified in `selenimation.js` by changing the values at the beg
 
 * `baseSelectionSpeed` - time in milliseconds between each new character being 'selected'. Default: *50*
 
-* `prefix` - string to be prepended to the animated text. Default: *''* (empty string)
+* `prefix` - string to be prepended to the animated text. Default: `''` (empty string)
 
-* `underline` - string specifying the underline style of the animated text - *`dotted`* | *dashed* | *none*
+* `underline` - string specifying the underline style of the animated text - `dotted | dashed | none`. Default: `dotted`
 
-* `selectionDirection` - direction for the selection animation - *left* (left-to-right) | *`right`* (right-to-left)
+* `selectionDirection` - direction for the selection animation - `left | right`. Default: `right`
 
 * `afterTyping` - time in milliseconds to sleep after 'typing' the last character. Default: *1000*
 
