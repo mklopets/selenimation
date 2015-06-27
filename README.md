@@ -45,6 +45,13 @@ Settings can be specified in `selenimation.js` by changing the properties listed
 
 * `afterSelection` - time in milliseconds to sleep after 'selecting' the last character. Default: *1000*
 
+To change any of these settings, do something like this:
+````javascript
+config.underline = 'dashed'; // dashed underline
+config.selectionDirection = 'left'; // right-to-left selection
+````
+
+
 ### Styling
 
 Selenimation comes almost unstyled out of the box. `/selenimation/selenimation.css` only controls the basic appearance of the selection and the underline by default. The colors, fonts and layout may be changed according to your needs.
