@@ -3,11 +3,11 @@
 # Selenimation
 Selenimation is a lightweight JavaScript and CSS library for imitating text being typed. Perfect for showcasing keywords or features in a fresh way.
 
-## Usage
 ---
+## Usage
 To get started with Selenimation, you only need to include the files provided in the `/selenimation` folder and a recent version of jQuery in your HTML.
 
-*jQuery* is a requirement for Selenimation to work. These are the lines of code required in the `head`tag of your HTML for Selenimation to work:
+*jQuery* is a requirement for Selenimation to work. These are the lines of code required in the `head` tag of your HTML for Selenimation to work:
 ````html
 <link rel="stylesheet" href="selenimation/selenimation.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
@@ -16,7 +16,7 @@ To get started with Selenimation, you only need to include the files provided in
 
 ### Syntax
 
-The strings to be looped through should be put in `li` elements inside an unordered list with the `selenimation` class:
+The strings to be looped through should be put in `li` elements inside an unordered list with the `selenimation` class like this:
 ````html
 <u class="selenimation">
 	<li>First string</li>
@@ -24,7 +24,9 @@ The strings to be looped through should be put in `li` elements inside an unorde
 	<li>One more string</li>
 </u>
 ````
-
+This allows for a really simple, yet nice fallback - a plain unordered list:
+![Selenimation fallback - a plain unordered list](http://i.imgur.com/8DKiWOL.png)
+---
 ### Settings
 
 Settings can be specified in `selenimation.js` by changing the properties listed below in the `config` object.
@@ -42,6 +44,13 @@ Settings can be specified in `selenimation.js` by changing the properties listed
 * `afterTyping` - time in milliseconds to sleep after 'typing' the last character. Default: *1000*
 
 * `afterSelection` - time in milliseconds to sleep after 'selecting' the last character. Default: *1000*
+
+To change any of these settings, do something like this:
+````javascript
+config.underline = 'dashed'; // dashed underline
+config.selectionDirection = 'left'; // right-to-left selection
+````
+
 
 ### Styling
 
