@@ -5,7 +5,7 @@ Selenimation is a lightweight JavaScript and CSS library for an input box style 
 
 ## Usage
 ---
-To get started with Selenimation, you only need to include the files provided in the `/selenium` folder and a recent version of jQuery in your HTML.
+To get started with Selenimation, you only need to include the files provided in the `/selenimation` folder and a recent version of jQuery in your HTML.
 
 *jQuery* is a requirement for Selenimation to work. These are the lines of code required in the `head`tag of your HTML for Selenimation to work:
 ````html
