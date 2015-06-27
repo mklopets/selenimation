@@ -1,7 +1,7 @@
+![GIF showing Selenimation in action](http://i.imgur.com/fuuZHfE.gif)
+
 # Selenimation
 Selenimation is a lightweight JavaScript and CSS library for an input box style animated display of an array.
-
-![GIF showing Selenimation in action](http://i.imgur.com/fuuZHfE.gif)
 
 ## Usage
 ---
