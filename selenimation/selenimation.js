@@ -1,18 +1,19 @@
 $(function() {
 	var list = [], // strings to loop through will be put into this
 		animate = true,
-		baseTypeSpeed = 150,
-		baseSelectionSpeed = 50,
 		listIndex = 0,
 		typeIndex = 0,
 		container,
-		// prefix = 'for example, ', // string prepended to all animated strings
-		prefix = '', // set to empty string for no prefix
-		afterTyping = 1000,
-		afterSelection = 1000,
-		selectionDirection = 'right',
-		underline = 'dotted';
 
+		config = {
+		baseTypeSpeed: 150,
+		baseSelectionSpeed: 50,
+		prefix: '',
+		afterTyping: 1000,
+		afterSelection: 1000,
+		selectionDirection: 'right',
+		underline: 'dotted'
+	};
 
 	// saves & removes strings from DOM
 	$('ul.selenimation li').each(function() {
@@ -42,20 +43,20 @@ $(function() {
 			resetContainer();
 
 			// handle different underlining options
-			if (underline == 'dotted') {
-				$(container).html(prefix + '<span class="selenimation-progress-dotted">' + currentlyTyped + '</span>');
+			if (config.underline == 'dotted') {
+				$(container).html(config.prefix + '<span class="selenimation-progress-dotted">' + currentlyTyped + '</span>');
 			}
-			else if (underline == 'dashed') {
-				$(container).html(prefix + '<span class="selenimation-progress-dashed">' + currentlyTyped + '</span>');
+			else if (config.underline == 'dashed') {
+				$(container).html(config.prefix + '<span class="selenimation-progress-dashed">' + currentlyTyped + '</span>');
 			}
 			else {
-				$(container).html(prefix + currentlyTyped);
+				$(container).html(config.prefix + currentlyTyped);
 			}
 
 			// wait before typing the next character
 			var timeout = window.setTimeout(function() {
 				return typeString(listIndex, position + 1);
-			}, baseTypeSpeed);
+			}, config.baseTypeSpeed);
 		}
 		else if (position == length) {
 			// finished typing string
@@ -64,7 +65,7 @@ $(function() {
 			window.setTimeout(function() {
 				selectString(listIndex, 0);
 				return true;
-			}, afterTyping);
+			}, config.afterTyping);
 		}
 		else {
 			return true;
@@ -83,7 +84,7 @@ $(function() {
 
 
 		// left to right selection direction
-		if (position < length + 1 && (selectionDirection == 1 || selectionDirection == 'right')) {
+		if (position < length + 1 && (config.selectionDirection == 1 || config.selectionDirection == 'right')) {
 			var currentlySelected = currentString.substring(0, position),
 				restOfString = currentString.substring(position);
 
@@ -94,12 +95,12 @@ $(function() {
 			// wait before selecting next character
 			var timeout = window.setTimeout(function() {
 				return selectString(listIndex, position + 1);
-			}, baseSelectionSpeed);
+			}, config.baseSelectionSpeed);
 
 		}
 
 		// right to left selection direction
-		else if (position < length + 1 && (selectionDirection == 1 || selectionDirection == 'left')) {
+		else if (position < length + 1 && (config.selectionDirection == 1 || config.selectionDirection == 'left')) {
 			var currentlySelected = currentString.substring(length - position),
 				restOfString = currentString.substring(0, length - position);
 
@@ -109,7 +110,7 @@ $(function() {
 			// wait before selecting next character
 			var timeout = window.setTimeout(function() {
 				return selectString(listIndex, position + 1);
-			}, baseSelectionSpeed);
+			}, config.baseSelectionSpeed);
 
 		}
 
@@ -130,7 +131,7 @@ $(function() {
 					// start typing the first entry of the strings' list again
 					return typeString(0, 0);
 				}				
-			}, afterSelection);
+			}, config.afterSelection);
 
 		}
 	}
@@ -139,10 +140,10 @@ $(function() {
 	 * wraps not-yet-selected part of string in span according to underline settings
 	 */
 	function prepareRestOfString(restOfString) {
-		if (underline == 'dotted') {
+		if (config.underline == 'dotted') {
 			return '<span class="selenimation-progress-dotted">' + restOfString + '</span>';
 		}
-		else if (underline == 'dashed') {
+		else if (config.underline == 'dashed') {
 			return '<span class="selenimation-progress-dashed">' + restOfString + '</span>';
 		}
 		else {
@@ -151,7 +152,7 @@ $(function() {
 	}
 
 	function resetContainer() {
-		$(container).text(prefix);
+		$(container).text(config.prefix);
 	}
 
 
