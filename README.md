@@ -24,7 +24,7 @@ The strings to be looped through should be put in `li` elements inside an unorde
 </u>
 ````
 ### Settings
-Settings can be specified in `selenimation.js` by changing the values at the beginning of the file.
+Settings can be specified in `selenimation.js` by changing the properties listed below in the `config` object.
 
 * `baseTypeSpeed` - time in milliseconds between each new character being 'typed'. Default: *150*
 
