@@ -1,0 +1,30 @@
+{
+  "name": "selenimation",
+  "version": "0.1.0",
+  "homepage": "https://github.com/mklopets/selenimation",
+  "authors": [
+    "Marko Klopets <mklopets@gmail.com>"
+  ],
+  "description": "Lightweight JavaScript and CSS library for imitating text being typed",
+  "keywords": [
+    "animation",
+    "selection",
+    "landing",
+    "page"
+  ],
+  "dependencies": {
+    "jquery": ">=2.1.0"
+  },
+  "license": "MIT",
+  "ignore": [
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests",
+    "index.html",
+    "page.css",
+    "bower.json",
+    "README.md",
+    ".gitignore"
+  ]
+}
