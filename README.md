@@ -15,6 +15,7 @@ To get started with Selenimation, you only need to include the files provided in
 ````
 
 ### Syntax
+
 The strings to be looped through should be put in `li` elements inside an unordered list with the `selenimation` class:
 ````html
 <u class="selenimation">
@@ -23,7 +24,9 @@ The strings to be looped through should be put in `li` elements inside an unorde
 	<li>One more string</li>
 </u>
 ````
+
 ### Settings
+
 Settings can be specified in `selenimation.js` by changing the properties listed below in the `config` object.
 
 * `baseTypeSpeed` - time in milliseconds between each new character being 'typed'. Default: *150*
@@ -39,3 +42,11 @@ Settings can be specified in `selenimation.js` by changing the properties listed
 * `afterTyping` - time in milliseconds to sleep after 'typing' the last character. Default: *1000*
 
 * `afterSelection` - time in milliseconds to sleep after 'selecting' the last character. Default: *1000*
+
+### Styling
+
+Selenimation comes almost unstyled out of the box. `/selenimation/selenimation.css` only controls the basic appearance of the selection and the underline by default. The colors, fonts and layout may be changed according to your needs.
+
+Use the `.selenimation-highlighted` class in your CSS to change the appearance of the selected text (background, color, unicorns, etc).
+
+`padding-bottom` for the `.selenimation-highlighted` must match the `border-bottom-width` of `.selenimation-progress-*` in order for the selection to appear the same size as the rest of the string.
