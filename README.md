@@ -4,7 +4,6 @@
 Selenimation is a lightweight JavaScript and CSS library for imitating text being typed. Perfect for showcasing keywords or features in a fresh way.
 
 ## Usage
----
 To get started with Selenimation, you only need to include the files provided in the `/selenimation` folder and a recent version of jQuery in your HTML.
 
 *jQuery* is a requirement for Selenimation to work. These are the lines of code required in the `head`tag of your HTML for Selenimation to work:
@@ -24,7 +23,7 @@ The strings to be looped through should be put in `li` elements inside an unorde
 	<li>One more string</li>
 </u>
 ````
-
+---
 ### Settings
 
 Settings can be specified in `selenimation.js` by changing the properties listed below in the `config` object.
