@@ -3,6 +3,7 @@
 # Selenimation
 Selenimation is a lightweight JavaScript and CSS library for imitating text being typed. Perfect for showcasing keywords or features in a fresh way.
 
+---
 ## Usage
 To get started with Selenimation, you only need to include the files provided in the `/selenimation` folder and a recent version of jQuery in your HTML.
 
