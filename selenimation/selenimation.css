@@ -1,0 +1,18 @@
+ul.selenimation {
+	list-style: none;
+	display: none;
+}
+
+.selenimation-highlighted {
+	background: Salmon;
+	color: white;
+}
+
+.selenimation-progress-dotted {
+	border-bottom: 2px dotted Salmon;
+	box-sizing: border-box;
+}
+.selenimation-progress-dashed {
+	border-bottom: 2px dashed Salmon;
+	box-sizing: border-box;
+}
