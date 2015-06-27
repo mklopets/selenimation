@@ -6,13 +6,12 @@ ul.selenimation {
 .selenimation-highlighted {
 	background: Salmon;
 	color: white;
+	padding: 2px 0;
 }
 
 .selenimation-progress-dotted {
 	border-bottom: 2px dotted Salmon;
-	box-sizing: border-box;
 }
 .selenimation-progress-dashed {
 	border-bottom: 2px dashed Salmon;
-	box-sizing: border-box;
 }
