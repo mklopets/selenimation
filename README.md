@@ -16,7 +16,7 @@ To get started with Selenimation, you only need to include the files provided in
 
 ### Syntax
 
-The strings to be looped through should be put in `li` elements inside an unordered list with the `selenimation` class:
+The strings to be looped through should be put in `li` elements inside an unordered list with the `selenimation` class like this:
 ````html
 <u class="selenimation">
 	<li>First string</li>
@@ -24,6 +24,8 @@ The strings to be looped through should be put in `li` elements inside an unorde
 	<li>One more string</li>
 </u>
 ````
+This allows for a really simple, yet nice fallback - a plain unordered list:
+![Selenimation fallback - a plain unordered list](http://i.imgur.com/8DKiWOL.png)
 ---
 ### Settings
 
