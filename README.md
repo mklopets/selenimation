@@ -7,7 +7,7 @@ Selenimation is a lightweight JavaScript and CSS library for imitating text bein
 ## Usage
 To get started with Selenimation, you only need to include the files provided in the `/selenimation` folder and a recent version of jQuery in your HTML.
 
-*jQuery* is a requirement for Selenimation to work. These are the lines of code required in the `head`tag of your HTML for Selenimation to work:
+*jQuery* is a requirement for Selenimation to work. These are the lines of code required in the `head` tag of your HTML for Selenimation to work:
 ````html
 <link rel="stylesheet" href="selenimation/selenimation.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
