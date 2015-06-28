@@ -10,6 +10,7 @@ var selenimation = (function() {
 			baseTypeSpeed: 150,
 			baseSelectionSpeed: 50,
 			prefix: '',
+			affix: '',
 			afterTyping: 1000,
 			afterSelection: 1000,
 			selectionDirection: 'right',
@@ -43,17 +44,8 @@ var selenimation = (function() {
 				var currentlyTyped = currentString.substring(0, position + 1);
 				resetContainer();
 
-				// handle different underlining options
-				if (config.underline == 'dotted') {
-					$(container).html(config.prefix + '<span class="selenimation-progress-dotted">' + currentlyTyped + '</span>');
-				}
-				else if (config.underline == 'dashed') {
-					$(container).html(config.prefix + '<span class="selenimation-progress-dashed">' + currentlyTyped + '</span>');
-				}
-				else {
-					$(container).html(config.prefix + currentlyTyped);
-				}
-
+				$(container).html(config.prefix + wrapProgress(currentlyTyped) + config.affix);
+				
 				// wait before typing the next character
 				var timeout = window.setTimeout(function() {
 					return typeString(listIndex, position + 1);
@@ -91,7 +83,7 @@ var selenimation = (function() {
 
 				resetContainer();
 
-				$(container).append('<span class="selenimation-highlighted">' + currentlySelected + '</span>' + prepareRestOfString(restOfString));
+				$(container).append('<span class="selenimation-highlighted">' + currentlySelected + '</span>' + wrapProgress(restOfString) + config.affix);
 
 				// wait before selecting next character
 				var timeout = window.setTimeout(function() {
@@ -106,7 +98,7 @@ var selenimation = (function() {
 					restOfString = currentString.substring(0, length - position);
 
 				resetContainer();
-				$(container).append(prepareRestOfString(restOfString) + '<span class="selenimation-highlighted">' + currentlySelected + '</span>');
+				$(container).append(wrapProgress(restOfString) + '<span class="selenimation-highlighted">' + currentlySelected + '</span>' + config.affix);
 
 				// wait before selecting next character
 				var timeout = window.setTimeout(function() {
@@ -140,15 +132,15 @@ var selenimation = (function() {
 		/*
 		 * wraps not-yet-selected part of string in span according to underline settings
 		 */
-		function prepareRestOfString(restOfString) {
+		function wrapProgress(toBeWrapped) {
 			if (config.underline == 'dotted') {
-				return '<span class="selenimation-progress-dotted">' + restOfString + '</span>';
+				return '<span class="selenimation-progress-dotted">' + toBeWrapped + '</span>';
 			}
 			else if (config.underline == 'dashed') {
-				return '<span class="selenimation-progress-dashed">' + restOfString + '</span>';
+				return '<span class="selenimation-progress-dashed">' + toBeWrapped + '</span>';
 			}
 			else {
-				return restOfString;
+				return toBeWrapped;
 			}
 		}
 

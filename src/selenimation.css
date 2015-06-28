@@ -10,7 +10,6 @@ ul.selenimation {
 }
 
 [class|="selenimation-progress"] {
-	border-bottom-style: dotted;
 	border-bottom-width: 2px;
 	border-bottom-color: Salmon;
 }
