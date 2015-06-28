@@ -1,7 +1,7 @@
 ![GIF showing Selenimation in action](http://i.imgur.com/fuuZHfE.gif)
 
 # Selenimation
-Selenimation is a lightweight JavaScript and CSS library for imitating text being typed. Perfect for showcasing keywords or features in a fresh way.
+Selenimation is a lightweight JavaScript and CSS library for imitating text being typed. Perfect for showcasing keywords, quotes or features in a fresh way.
 
 ---
 ## Usage
