@@ -21,7 +21,7 @@ var selenimation = (function() {
 			list.push($(this).html())
 			$(this).remove();
 		});
-		container = $('ul.selenimation').parent();
+		container = $('ul.selenimation').wrap('<div class="selenimation-wrapper"></div>').parent();
 		$('ul.selenimation').remove();
 
 
