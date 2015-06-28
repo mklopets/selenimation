@@ -10,7 +10,7 @@ var selenimation = (function() {
 			baseTypeSpeed: 150,
 			baseSelectionSpeed: 50,
 			prefix: '',
-			affix: ' -Confucius',
+			affix: '',
 			afterTyping: 1000,
 			afterSelection: 1000,
 			selectionDirection: 'right',
@@ -138,6 +138,9 @@ var selenimation = (function() {
 			}
 			else if (config.underline == 'dashed') {
 				return '<span class="selenimation-progress-dashed">' + toBeWrapped + '</span>';
+			}
+			else if (config.underline == 'solid') {
+				return '<span class="selenimation-progress-solid">' + toBeWrapped + '</span>';
 			}
 			else {
 				return toBeWrapped;

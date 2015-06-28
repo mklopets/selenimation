@@ -1,5 +1,6 @@
 ul.selenimation {
 	list-style: none;
+	list-style-position: inside;
 	display: none;
 }
 
@@ -19,4 +20,7 @@ ul.selenimation {
 }
 .selenimation-progress-dashed {
 	border-bottom-style: dashed;
+}
+.selenimation-progress-solid {
+	border-bottom-style: solid;
 }
