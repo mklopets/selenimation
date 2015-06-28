@@ -1,1 +1,1 @@
-ul.selenimation{list-style:none;display:none}.selenimation-highlighted{background:Salmon;color:#fff;padding:2px 0}.selenimation-progress-dotted{border-bottom:2px dotted Salmon}.selenimation-progress-dashed{border-bottom:2px dashed Salmon}
+ul.selenimation{list-style:none;display:none}.selenimation-highlighted{background:Salmon;color:#fff;padding:2px 0}[class|=selenimation-progress]{border-bottom-style:dotted;border-bottom-width:2px;border-bottom-color:Salmon}.selenimation-progress-dotted{border-bottom-style:dotted}.selenimation-progress-dashed{border-bottom-style:dashed}

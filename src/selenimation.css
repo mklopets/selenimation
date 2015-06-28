@@ -9,9 +9,15 @@ ul.selenimation {
 	padding: 2px 0;
 }
 
+[class|="selenimation-progress"] {
+	border-bottom-style: dotted;
+	border-bottom-width: 2px;
+	border-bottom-color: Salmon;
+}
+
 .selenimation-progress-dotted {
-	border-bottom: 2px dotted Salmon;
+	border-bottom-style: dotted;
 }
 .selenimation-progress-dashed {
-	border-bottom: 2px dashed Salmon;
+	border-bottom-style: dashed;
 }
