@@ -6,7 +6,7 @@ Selenimation is a lightweight JavaScript and CSS library for imitating text bein
 ---
 ## Usage
 
-You can install Selenimation using Bower:
+You can install Selenimation using [Bower](http://bower.io/):
 ````
 bower install selenimation 
 ````
