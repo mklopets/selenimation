@@ -10,7 +10,7 @@ var selenimation = (function() {
 			baseTypeSpeed: 150,
 			baseSelectionSpeed: 50,
 			prefix: '',
-			affix: '',
+			affix: ' -Confucius',
 			afterTyping: 1000,
 			afterSelection: 1000,
 			selectionDirection: 'right',
