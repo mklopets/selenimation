@@ -18,11 +18,19 @@ body {
 	    -ms-flex-pack: center;
 	        justify-content: center;
 
+	min-width: 360px;
 	height: 100vh;
-	
+
 	color: #333;
 	font-family: Calibri,Candara,Segoe,"Segoe UI",Optima,Arial,sans-serif;
 }
+
+
+.wrapper {
+	max-width: 90vw;
+}
+
+
 
 h1 {
 	margin-bottom: 20px;
@@ -50,7 +58,7 @@ ul {
 
 
 .notice {
-	width: 600px;
+	max-width: 1024px;
 	margin-top: 100px;
 	background: #f5f5f5;
 	border: 1px solid #aaa;
