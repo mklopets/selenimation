@@ -48,7 +48,7 @@ Settings can be specified in `selenimation.js` by changing the properties listed
 
 * `affix` - string to be appended to the animated text. Default: `''` (empty string)
 
-* `underline` - string specifying the underline style of the animated text - `dotted | dashed | none`. Default: `dotted`
+* `underline` - string specifying the underline style of the animated text - `dotted | dashed | solid | none`. Default: `dotted`
 
 * `selectionDirection` - direction for the selection animation - `left | right`. Default: `right`
 
