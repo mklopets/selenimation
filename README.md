@@ -13,7 +13,7 @@ bower install selenimation
 
 Alternatively, you can download the zip and include the files provided in the `/selenimation` folder and a recent version of jQuery in your HTML.
 
-[Download version 0.1.0](https://github.com/mklopets/selenimation/archive/0.1.0.zip)
+[Download version 0.1.1](https://github.com/mklopets/selenimation/archive/0.1.1.zip)
 
 
 *jQuery* is a requirement for Selenimation to work. These are the lines of code required in the `head` tag of your HTML for Selenimation to work:
