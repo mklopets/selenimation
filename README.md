@@ -65,6 +65,8 @@ config.selectionDirection = 'left'; // right-to-left selection
 
 Selenimation comes almost unstyled out of the box. `/selenimation/selenimation.css` only controls the basic appearance of the selection and the underline by default. The colors, fonts and layout may be changed according to your needs.
 
+To style the whole Selenimation element that is automatically created, you can use the `.selenimation-wrapper` selector in CSS.
+
 Use the `.selenimation-highlighted` class in your CSS to change the appearance of the selected text (background, color, unicorns, etc).
 
 Use `[class|="selenimation-progress"]` to style parts of text that aren't currently selected.
