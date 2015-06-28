@@ -1,1 +1,6 @@
 bower_components
+node_modules
+js
+css
+package.json
+Gruntfile.js

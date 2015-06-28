@@ -20,11 +20,15 @@
     "node_modules",
     "bower_components",
     "test",
+    "css",
+    "js",
     "tests",
     "index.html",
     "page.css",
     "bower.json",
     "README.md",
-    ".gitignore"
+    ".gitignore",
+    "package.json",
+    "Gruntfile.js"
   ]
 }
