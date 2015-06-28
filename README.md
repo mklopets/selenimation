@@ -67,4 +67,6 @@ Selenimation comes almost unstyled out of the box. `/selenimation/selenimation.c
 
 Use the `.selenimation-highlighted` class in your CSS to change the appearance of the selected text (background, color, unicorns, etc).
 
-`padding-bottom` for the `.selenimation-highlighted` must match the `border-bottom-width` of `.selenimation-progress-*` in order for the selection to appear the same size as the rest of the string.
+Use `[class|="selenimation-progress"]` to style parts of text that aren't currently selected.
+
+`padding-bottom` for the `.selenimation-highlighted` must match the `border-bottom-width` of `[class|="selenimation-progress"]` in order for the selection to appear the same size as the rest of the string.
