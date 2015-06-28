@@ -5,7 +5,16 @@ Selenimation is a lightweight JavaScript and CSS library for imitating text bein
 
 ---
 ## Usage
-To get started with Selenimation, you only need to include the files provided in the `/selenimation` folder and a recent version of jQuery in your HTML.
+
+You can install Selenimation using Bower:
+````
+bower install selenimation 
+````
+
+Alternatively, you can download the zip and include the files provided in the `/selenimation` folder and a recent version of jQuery in your HTML.
+
+[Download version 0.1.0](https://github.com/mklopets/selenimation/archive/0.1.0.zip)
+
 
 *jQuery* is a requirement for Selenimation to work. These are the lines of code required in the `head` tag of your HTML for Selenimation to work:
 ````html
