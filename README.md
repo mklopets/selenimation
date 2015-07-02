@@ -28,11 +28,11 @@ Alternatively, you can download the zip and include the files provided in either
 
 The strings to be looped through should be put in `li` elements inside an unordered list with the `selenimation` class like this:
 ````html
-<u class="selenimation">
+<ul class="selenimation">
 	<li>First string</li>
 	<li>Second string</li>
 	<li>One more string</li>
-</u>
+</ul>
 ````
 This allows for a really simple, yet nice fallback - a plain unordered list:
 ![Selenimation fallback - a plain unordered list](http://i.imgur.com/8DKiWOL.png)
